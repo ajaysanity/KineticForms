@@ -1,0 +1,93 @@
+<div class="container-fluid">
+  <div class="row container-header">
+    <div class="col-4">
+      <img [src]="task1.image" class="p-2">
+    </div>
+    <div class="col-4 offset-4 d-flex user justify-content-end">
+      <fa-icon class="icon-bell" [icon]="faBell"></fa-icon>
+      <div class="align-self-end mr-2 ml-2">
+        <p class="profile-name text-center">{{task2.firstname}} {{task2.lastname}} - {{task2.role}}</p>
+      </div>
+      <img [src]="task2.avatar_url" class="user-avatar">
+    </div>
+  </div>
+  <div class="row container-main p-2 mt-5">
+    <div class="col-2">
+      <div class="side-menu d-flex flex-column">
+        <div class="ml-2 mt-3"> Menu
+        </div>
+        <div class="mt-2 dashboard d-flex justify-content-start pl-3">
+          <div class="align-self-center"> Dashboard</div>
+        </div>
+        <div class="ml-2 mt-3"> Tutorials
+        </div>
+        <div class="mt-2 dashboard d-flex justify-content-start pl-3">
+          <div class="align-self-center"> Tutorials Page</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10">
+      <div class="main-menu d-flex flex-column">
+        <div class="main-menu-header pl-5 pt-5">
+          Profile
+        </div>
+        <div class="main-forms d-flex flex-row bd-highlights">
+          <div class="row w-100 pl-5">
+            <div class="col-7">
+                <div class="user-forms ml-3">
+                    <form #profileForm="ngForm" autocomplete="off" (submit)="onSubmit(profileForm)">
+                          <div class="form-group d-flex flex-row">
+                            <label class="align-self-center text-form mr-4">First Name</label>
+                            <mat-form-field class="ml-auto w-75">
+                              <input name="firstname" #firstname="ngModel" [ngModel]="task2.firstname" matInput>
+                            </mat-form-field>
+                          </div>
+                          <div class="form-group d-flex">
+                            <label class="align-self-center text-form mr-4">Last Name</label>
+                            <mat-form-field class="ml-auto w-75">
+                              <input name="lastname" #lastname="ngModel" [ngModel]="task2.lastname" matInput>
+                            </mat-form-field>
+                          </div>
+                          <div class="form-group d-flex">
+                            <label class="align-self-center text-form mr-4">Email</label>
+                            <mat-form-field class="ml-auto w-75">
+                              <input  name="email" #email="ngModel" [ngModel]="task2.email" matInput>
+                            </mat-form-field>
+                          </div>
+                          <div class="form-group d-flex">
+                            <label class="align-self-center text-form mr-4">Employer</label>
+                            <mat-form-field class="ml-auto w-75">
+                              <mat-select name="emp" #emp="ngModel" [ngModel]="task2.employer" matInput placeholder="Select">
+                                <mat-option *ngFor="let employer of task2.employer" [value]="employer.organisation_name">
+                                  {{employer.organisation_name}}</mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                          <div class="form-group d-flex">
+                            <label class="align-self-center text-form mr-4">RTO</label>
+                            <mat-form-field class="ml-auto w-75">
+                              <mat-select matInput placeholder="Select" name="_rto" #_rto="ngModel" [ngModel]="task2.rto" >
+                                <mat-option *ngFor="let rto of task2.rto" [(value)]="rto.organisation_name">
+                                  {{rto.organisation_name}}</mat-option>
+                              </mat-select>
+                            </mat-form-field>
+
+                          </div>
+                          <button class="btn justify-content-center btn-block btn-sm btn-primary">Update</button>
+
+                    </form>
+                  </div>
+
+            </div>
+            <div class="col-5">
+           <app-qualifications></app-qualifications>    
+            
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

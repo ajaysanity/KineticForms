@@ -1,0 +1,11 @@
+{
+    "qualifications": [
+        {"id": 1,"name": "UEE30811 Certificate III in Electrotechnology"},
+        {"id": 2,"name": "NAT090909 Some other Qualificaition"}
+    ],
+    "newQualifications": [
+        {"id": 1, "name": "UEE30820 Electro"},
+        {"id":2, "name": "UEE39999 Cert IV in UFO manufacturing"}
+    ]
+    
+}

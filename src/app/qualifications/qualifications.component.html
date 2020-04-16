@@ -1,0 +1,25 @@
+<div class="qualifications d-flex flex-column">
+    <label>Qualifications</label>
+    <div *ngFor="let qualification of qualifications" class="d-flex container-main">
+       
+        <label class="quali-text"> {{qualification.name}} </label>
+        <div class="ml-auto h-100">
+            <button class="btn btn-warning btn-sm h-75"(click)="removeCertificates(qualification.id)">Remove</button>
+        </div>
+    </div>
+    <div class="add-new d-flex justify-content-end flex-wrap w-100">
+        <form [formGroup]="certForm" class="w-75 mr-3">
+            <fa-icon class="icon-plus" [icon]="faPlus" (click)="addCertificates()"></fa-icon>
+            <div class="text-plus" >
+                <p>(add new qualification)</p>
+            </div>
+            <mat-form-field>
+                <mat-select matInput placeholder="Select" formControlName="certName">
+                  <mat-option *ngFor="let newCert of newQualifications" [value]="newCert.name">
+                    {{newCert.name}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+        </form>
+    </div>
+    
+</div>

@@ -1,0 +1,8 @@
+{
+  "image": "https://lms-special-content.s3-ap-southeast-2.amazonaws.com/header-logo.png",
+  "organisation": "The Tardis",
+  "organisationId": "1",
+  "background_color": "#343434",
+  "text_color": "white",
+  "secondary_color": "#454545"
+}

@@ -1,0 +1,35 @@
+{
+  "id": 1,
+  "firstname": "Ben",
+  "lastname": "Smith",
+  "email": "test@exemplar.com",
+  "usi": "232323232",
+  "avatar_url": "https://lms-special-content.s3-ap-southeast-2.amazonaws.com/pro.png",
+  "role": "student",
+  "employer": [
+    {"id":1, "organisation_name": "a"},
+    {
+    "id": 2,
+    "organisation_name": "BHP"
+  }],
+  "rto": [
+    {"id":1, "organisation_name": "a"}
+    ,{
+    "id": 2,
+    "organisation_name": "TAFENSW"
+  }],
+  "navigation_menus": [{
+    "menu_item": "Notifications",
+    "href": "./Notifications.html"
+  }, {
+    "menu_item": "Profiling",
+    "href": "./homepage.html"
+  }],
+  "tutorials": [{
+    "tutorial_item": "Re-submit evidence",
+    "href": "./resubmit.html"
+  }],
+  "qualifications": [{
+    "qualification_id": 1
+  }]
+}

@@ -1,0 +1,79 @@
+.container-fluid{
+    background-color: #1F3048;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+.user-avatar{
+    border-radius: 50%;
+    height: 70%;
+    width: auto;
+}
+.profile-name{
+    font-size: 13px;
+    float: right;
+}
+.user{
+    align-items: center;
+    
+}
+.icon-bell{
+    font-size: 30px;
+}
+.side-menu{
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 95%;
+    border-radius: 5px;
+    color: black;
+
+}
+.container-main{
+height: 80vh;
+}
+.main-menu{
+    background-color: #FFFFFF;
+    height: 100%;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.dashboard:hover{
+    background-color: #C49861;
+    color: white;
+}
+.dashboard{
+    padding-left: 10px;
+    width: 100%;
+    font-size: 13px;
+    height: 8%;
+    color: rgb(96, 96, 96);
+    border-radius: 8px 8px 0 0;
+}
+
+.main-menu-header{
+    color: black;
+}
+.user-forms{
+    color: black;
+    width: 100%;
+}
+.text-form{
+    font-size: 12px;
+}
+.qualifications{
+    color:black;
+}
+.quali-text{
+    font-size: 12px;
+}
+.icon-plus{
+    color: green;
+    font-size: 30px;
+    
+}
+.text-plus{
+    position: relative;
+    left:0;
+
+}
